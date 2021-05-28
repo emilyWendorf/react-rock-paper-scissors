@@ -47,18 +47,18 @@ const Game = ({
 
     return (
         <div className="game">
-            My choice: {myChoice} <br />
-            House choice: {house}
+            <span>You: </span>{myChoice} <br />
+            <span>Computer: </span>{house}
 
             
-            {playerWin=="win" && <h2>You Win</h2>}
-            {playerWin=="lose" && <h2>You Lose</h2>}
+            {playerWin=="win" && <h2>You Win!</h2>}
+            {playerWin=="lose" && <h2>You Lose!</h2>}
             {playerWin=="draw" && <h2>Draw!</h2>}
             
             <div className="replay">
-                <Link to="/" onClick={()=>setHouse()}>
-                    Play Again
-                </Link><br /><br />
+                <button><Link to="/" onClick={()=>setHouse()}>
+                    <span className="replay-btn">Play Again</span>
+                </Link></button><br /><br />
                 Score:{score}
             </div>
         </div>
