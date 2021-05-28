@@ -17,7 +17,7 @@ function App() {
         <Header score={score} />
         <Switch>
           <Route exact path="/">
-            <Play setMyChoice={setMyChoice} />
+            <Play setMyChoice={setMyChoice} score={score} />
           </Route>
           <Route path="/game">
             <Game myChoice={myChoice} score={score} setScore={setScore} />
