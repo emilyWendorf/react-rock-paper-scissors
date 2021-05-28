@@ -2,30 +2,30 @@ import React from 'react'
 import { Link } from "react-router-dom"
 
 const Play = ({
-    setMyChoice
+    setMyChoice,
+    score
 }) => {
 
-const setChoice=(e)=> {
-    setMyChoice(e.target.dataset.id);
-}
     
     return (
         <div className="play">
             <Link to="/game">
-                <div data-id="paper" onClick={setChoice} className="icon icon--paper">
+                <div onClick={() => setMyChoice("rock")} className="icon icon--rock">
+                    Rock
+                </div>
+            </Link>
+            <Link to="/game">
+                <div onClick={() => setMyChoice("paper")} className="icon icon--paper">
                     Paper
                 </div>
             </Link>
             <Link to="/game">
-                <div data-id="scissors" onClick={setChoice} className="icon icon--scissors">
+                <div onClick={() => setMyChoice("scissors")} className="icon icon--scissors">
                     Scissors
                 </div>
             </Link>
-            <Link to="/game">
-                <div data-id="rock" onClick={setChoice} className="icon icon--rock">
-                    Rock
-                </div>
-            </Link>
+            <br />
+            Score:{score}
         </div>
     );
 };

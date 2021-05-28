@@ -15,10 +15,19 @@ body {
     box-sizing: border-box;
 }
 
+h2 {
+    border-right:4px solid pink;
+    border-left:4px solid pink;
+    font-size:32pt;
+    color:hsl(220, 50%, 40%);
+    margin:auto;
+    margin-top:25px;
+    max-width:200px;
+}
 
 a:link,a:visited {
     text-decoration: none;
-    color:hotpink;
+    color:palevioletred;
     font-size:24pt;
 }
 
@@ -27,8 +36,35 @@ a:hover {
 }
 
 .header {
+    border:4px solid pink;
+    border-radius:20px 20px 0px 0px;
+    background-color:rgba(255,200,200,.75);
+    padding:20px;
+    max-width:400px;
+    margin:auto;
     margin-top:30px;
-    margin-bottom:50px;
+    position:relative;
+    z-index:1;
+}
+
+.play {
+    border:4px solid lightgrey;
+    border-radius:0px 0px 20px 20px;
+    background-color:rgba(255,255,255,.25);
+    padding:20px;
+    max-width:400px;
+    margin:auto;
+    margin-top:-4px;
+}
+
+.game {
+    border:4px solid lightgrey;
+    border-radius:0px 0px 20px 20px;
+    background-color:rgba(255,255,255,.25);
+    padding:20px;
+    max-width:400px;
+    margin:auto;
+    margin-top:-4px;
 }
 
 .replay {
