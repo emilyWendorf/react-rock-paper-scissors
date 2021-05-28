@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18pt;
+    color: white;
+    background: $background-gradient;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+a:link,a:visited {
+    text-decoration: none;
+    color:hotpink;
+    font-size:24pt;
+}
+
+a:hover {
+    color:white;
+}
+
+.header {
+    margin-top:30px;
+    margin-bottom:50px;
+}
+
+.replay {
+    margin-top:50px;
+}
+
+.footer {
+    margin-top:20px;
+}
