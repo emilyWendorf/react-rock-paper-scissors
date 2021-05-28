@@ -13,6 +13,11 @@ body {
     background: $background-gradient;
     text-align: center;
     box-sizing: border-box;
+    max-width:100%;
+}
+
+#app {
+    max-width:100%;
 }
 
 h2 {
@@ -41,6 +46,7 @@ a:hover {
     background-color:rgba(255,200,200,.75);
     padding:20px;
     max-width:400px;
+    min-width:300px;
     margin:auto;
     margin-top:30px;
     position:relative;
@@ -53,6 +59,7 @@ a:hover {
     background-color:rgba(255,255,255,.25);
     padding:20px;
     max-width:400px;
+    min-width:300px;
     margin:auto;
     margin-top:-4px;
 }
